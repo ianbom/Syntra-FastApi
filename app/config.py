@@ -18,8 +18,16 @@ class Settings(BaseSettings):
     MINIO_ENDPOINT: str
     MINIO_ACCESS_KEY: str
     MINIO_SECRET_KEY: str
-    MINIO_BUCKET: str = "posts"
+    MINIO_BUCKET: str = "syntra-minio"
+    MINIO_DOCUMENTS_BUCKET: str = "documents"
     MINIO_SECURE: bool = False
+    
+    # GROBID
+    GROBID_URL: str = "http://localhost:8070"
+    
+    # Ollama
+    OLLAMA_BASE_URL: str = "http://localhost:11434"
+    OLLAMA_EMBEDDING_MODEL: str = "nomic-embed-text"
     
     class Config:
         env_file = ".env"

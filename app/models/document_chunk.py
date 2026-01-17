@@ -36,8 +36,8 @@ class DocumentChunk(Base):
     content = Column(Text, nullable=False)
     token_count = Column(Integer)
     
-    # Vector embedding (OpenAI text-embedding-3-small dimension: 1536)
-    embedding = Column(Vector(1536))
+    # Vector embedding (nomic-embed-text dimension: 768)
+    embedding = Column(Vector(768))
     
     # Additional metadata
     chunk_metadata = Column(JSONB)  # Flexible metadata storage

@@ -11,3 +11,9 @@ pydantic-settings
 pytest
 pytest-asyncio
 httpx
+
+# Document Processing
+pgvector
+lxml
+requests
+pypdf
